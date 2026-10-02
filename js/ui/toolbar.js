@@ -20,7 +20,7 @@ export function mountTopbar(root, { store, actions, view, onDownload }) {
   ]);
 
   root.append(
-    el("div", { class: "brand" }, [el("span", { class: "brand-mark" }, icon("layout-grid-fill")), el("span", {}, "Floor Designer")]),
+    el("div", { class: "brand" }, [el("span", { class: "brand-mark" }, icon("layout-grid-fill")), el("span", {}, "Snaptile")]),
     el("div", { class: "topbar-group" }, [undo, redo]),
     el("div", { class: "topbar-group hide-sm" }, [
       iconButton("zoom-out-line", "Zoom out (−)", () => view.zoom(1 / ZOOM.step)),

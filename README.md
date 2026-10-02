@@ -1,4 +1,4 @@
-# Floor Designer
+# Snaptile
 
 Design an interlocking tile floor in the browser, see exact tile and edge quantities, and download the plan as an image.
 
