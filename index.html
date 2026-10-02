@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floor Designer</title>
+    <meta name="description" content="Design an interlocking tile floor, see exact quantities and download the plan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/canvas.css" />
+    <link rel="stylesheet" href="css/summary.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar" id="topbar"></header>
+
+      <aside class="sidebar" id="sidebar" aria-label="Design steps"></aside>
+
+      <main class="stage" id="stage">
+        <canvas id="plan" aria-label="Floor plan editor"></canvas>
+        <div class="tool-dock" id="toolDock" role="toolbar" aria-label="Canvas tools"></div>
+        <div class="stage-hint" aria-hidden="true">
+          Scroll to zoom · drag empty space to pan · drag walls to resize
+        </div>
+      </main>
+
+      <aside class="summary" id="summary" aria-label="Quantities"></aside>
+    </div>
+
+    <noscript>This designer needs JavaScript enabled.</noscript>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
